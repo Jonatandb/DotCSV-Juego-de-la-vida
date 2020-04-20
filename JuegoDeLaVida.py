@@ -1,5 +1,6 @@
 import pygame
 import numpy as np
+import time
 
 pygame.init()
 
@@ -22,13 +23,59 @@ nxC, nyC = 25, 25
 dimCW = width / nxC
 dimCH = height / nyC
 
+# Estructura de datos que contiene todos los estados de las diferentes celdas
+# Estados de las celdas: Vivas = 1 - Muertas = 0
+# Inicializo matriz con ceros
+gameState = np.zeros((nxC, nyC))
+
+# Autómata palo:
+gameState[5, 3] = 1
+gameState[5, 4] = 1
+gameState[5, 5] = 1
+
+# Autómata móvil:
+gameState[21, 21] = 1
+gameState[22, 22] = 1
+gameState[22, 23] = 1
+gameState[21, 23] = 1
+gameState[20, 23] = 1
+
 # Bucle de ejecución principal (Main Loop)
 while True:
+
+    newGameState = np.copy(gameState)
+
+    # Vuelvo a colorear la pantalla con el color de fondo
+    screen.fill(bg)
+
+    # Agrego pequeña pausa para que el cpu no trabaje al 100%
+    time.sleep(0.1)
 
     # Recorro cada una de las celdas generadas
     for y in range(0, nxC):
         for x in range(0, nyC):
 
+            # Cálculo del número de vecinos cercanos
+            n_neigh = (
+                gameState[(x - 1) % nxC, (y - 1) % nyC]
+                + gameState[(x) % nxC, (y - 1) % nyC]
+                + gameState[(x + 1) % nxC, (y - 1) % nyC]
+                + gameState[(x - 1) % nxC, (y) % nyC]
+                + gameState[(x + 1) % nxC, (y) % nyC]
+                + gameState[(x - 1) % nxC, (y + 1) % nyC]
+                + gameState[(x) % nxC, (y + 1) % nyC]
+                + gameState[(x + 1) % nxC, (y + 1) % nyC]
+            )
+
+            # Regla 1: Una célula muerta con exactamente 3 vecinas vivas: "revive"
+            if gameState[x, y] == 0 and n_neigh == 3:
+                newGameState[x, y] = 1
+
+            # Regla 2: Una célula viva con menos de 2 o más de 3 vecinas vivas : "muere"
+            elif gameState[x, y] == 1 and (n_neigh < 2 or n_neigh > 3):
+                newGameState[x, y] = 0
+
+            # Creación del poligono de cada celda a dibujar
             poly = [
                 ((x) * dimCW, y * dimCH),
                 ((x + 1) * dimCW, y * dimCH),
@@ -36,10 +83,17 @@ while True:
                 ((x) * dimCW, (y + 1) * dimCH),
             ]
 
-            # screen          -> Pantalla donde dibujar
-            # (128, 128, 128) -> Color a utilizar para dibujar, en este caso un gris
-            # poly            -> Puntos que definan al poligono que se está dibujando
-            pygame.draw.polygon(screen, (128, 128, 128), poly, 1)
+            if newGameState[x, y] == 0:
+                # Dibujado de la celda para cada par de x e y:
+                # screen          -> Pantalla donde dibujar
+                # (128, 128, 128) -> Color a utilizar para dibujar, en este caso un gris
+                # poly            -> Puntos que definan al poligono que se está dibujando
+                pygame.draw.polygon(screen, (128, 128, 128), poly, 1)
+            else:
+                pygame.draw.polygon(screen, (255, 255, 255), poly, 0)
+
+    # Actualizo gameState
+    gameState = np.copy(newGameState)
 
     # Muestro y actualizo los fotogramas en cada iteración del bucle principal
     pygame.display.flip()
