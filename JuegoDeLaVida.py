@@ -13,6 +13,12 @@ pygame.display.set_caption("Juego de la vida - Jonatandb")
 # Ancho y alto de la pantalla
 width, height = 700, 700
 
+# Carga el icono
+icono = pygame.image.load("./icono.ico")
+
+# Establece el icono
+pygame.display.set_icon(icono)
+
 # Creación de la pantalla
 screen = pygame.display.set_mode((height, width))
 
