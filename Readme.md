@@ -22,6 +22,10 @@
 
 - ### Con click medio del mouse se Inicia/Pausa la ejecución del juego
 
+- ### Reglas:
+  - Regla 1: Una célula muerta con exactamente 3 vecinas vivas: "revive".
+  - Regla 2: Una célula viva que tiene menos de 2 vecinas o tiene más de 3 vecinas vivas: "muere"
+
 ---
 
 ## Pásginas consultadas:
