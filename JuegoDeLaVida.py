@@ -114,6 +114,9 @@ while not endGame:
             celX, celY = int(np.floor(posX / dimCW)), int(np.floor(posY / dimCH))
             newGameState[celX, celY] = not mouseClick[2]
 
+        if mouseClick[1]:
+            pauseExec = not pauseExec
+
     # Recorro cada una de las celdas generadas
     for y in range(0, nxC):
         for x in range(0, nyC):
