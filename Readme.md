@@ -4,9 +4,13 @@
 
 ---
 
-# Para jugarlo online hacer click acá:
+<p align="center">
+    <a href="https://github.com/Jonatandb/DotCSV-Juego-de-la-vida">
+        <img src="Juego_de_la_vida_Jonatandb.gif" alt="Juego de la vida | Versión Jonatandb"/>
+    </a>
+</p>
 
-## <a href="https://repl.it/@Jonatandb/DotCSV-Juego-de-la-vida-Jonatandb" target="_blank">Juego de la vida - Versión: Jonatandb :-)</a>
+## <a href="https://repl.it/@Jonatandb/DotCSV-Juego-de-la-vida-Jonatandb" target="_blank">Jugalo online haciendo click acá: Juego de la vida by Jonatandb :-)</a>
 
 ## Cómo jugar:
 
@@ -14,7 +18,7 @@
 
 - ### Con click izquierdo se da "vida" a celdas de la grilla
 
-- ### Con click derecho se "mata" celdas clickeadas en la grilla
+- ### Con click derecho se "mata" celdas "vivas" en la grilla
 
 - ### Con click medio del mouse se Inicia/Pausa la ejecución del juego
 
