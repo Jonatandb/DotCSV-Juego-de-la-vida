@@ -5,7 +5,7 @@ import time
 pygame.init()
 
 # Ancho y alto de la pantalla
-width, height = 1000, 1000
+width, height = 700, 700
 
 # Creación de la pantalla
 screen = pygame.display.set_mode((height, width))
