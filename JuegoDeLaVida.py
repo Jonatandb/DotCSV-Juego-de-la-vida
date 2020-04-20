@@ -40,14 +40,44 @@ gameState = np.zeros((nxC, nyC))
 # 0 1 0
 # 0 0 1
 # 1 1 1
-gameState[21, 21] = 1
-gameState[22, 22] = 1
-gameState[22, 23] = 1
-gameState[21, 23] = 1
-gameState[20, 23] = 1
+# gameState[21, 21] = 1
+# gameState[22, 22] = 1
+# gameState[22, 23] = 1
+# gameState[21, 23] = 1
+# gameState[20, 23] = 1
 
-# Control de la ejecución:
-pauseExec = False
+# Autómata Jonatandb :)
+# 1 1 1
+# 0 0 1
+# 1 0 1
+# 1 1 1
+# gameState[10, 10] = 1
+# gameState[11, 10] = 1
+# gameState[12, 10] = 1
+# gameState[12, 11] = 1
+# gameState[10, 12] = 1
+# gameState[12, 12] = 1
+# gameState[10, 13] = 1
+# gameState[11, 13] = 1
+# gameState[12, 13] = 1
+
+# Versión de mi aútomata que siempre aparece centrada: Autómata Jonatandb :)
+posInitX = int((nxC / 2) - 3)
+posInitY = int((nyC / 2) - 4)
+gameState[posInitX, posInitY] = 1
+gameState[posInitX + 1, posInitY] = 1
+gameState[posInitX + 2, posInitY] = 1
+gameState[posInitX + 2, posInitY + 1] = 1
+gameState[posInitX, posInitY + 2] = 1
+gameState[posInitX + 2, posInitY + 2] = 1
+gameState[posInitX, posInitY + 3] = 1
+gameState[posInitX + 1, posInitY + 3] = 1
+gameState[posInitX + 2, posInitY + 3] = 1
+
+# Control de la ejecución - En True se inicia pausado (Para poder ver la forma inicial de los aútomatas):
+pauseExec = True
+
+pauseOneSec = False  # Defino que quiero que pause un segundo por vuelta
 
 # Bucle de ejecución principal (Main Loop)
 while True:
@@ -115,3 +145,7 @@ while True:
 
     # Muestro y actualizo los fotogramas en cada iteración del bucle principal
     pygame.display.flip()
+
+    if pauseOneSec:
+
+        time.sleep(1)
