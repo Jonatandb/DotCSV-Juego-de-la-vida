@@ -7,11 +7,8 @@ os.environ["SDL_VIDEO_CENTERED"] = "1"
 
 pygame.init()
 
-# Establezco el titulo de la ventana:
+# Establezco el título de la ventana:
 pygame.display.set_caption("Juego de la vida - Jonatandb")
-
-# Ancho y alto de la pantalla
-width, height = 700, 700
 
 # Carga el icono
 icono = pygame.image.load("./icono.ico")
@@ -19,7 +16,10 @@ icono = pygame.image.load("./icono.ico")
 # Establece el icono
 pygame.display.set_icon(icono)
 
-# Creación de la pantalla
+# Defino ancho y alto de la ventana
+width, height = 700, 700
+
+# Creación de la ventana
 screen = pygame.display.set_mode((height, width))
 
 # Color de fondo, casi negro
@@ -89,7 +89,7 @@ gameState[posInitX + 2, posInitY + 3] = 1
 # Control de la ejecución - En True se inicia pausado (Para poder ver la forma inicial de los aútomatas):
 pauseExec = True
 
-# Defino que quiero que pause un segundo por vuelta:
+# Controla si se debe pausar un segundo por iteración:
 pauseOneSec = False
 
 # Controla la finalización del juego:
@@ -111,9 +111,11 @@ while not endGame:
 
     for event in ev:
 
+        # Si cierran la ventana finalizo el juego
         if event.type == pygame.QUIT:
             endGame = True
 
+        # Si tocan una tecla pauso / reanudo el juego
         if event.type == pygame.KEYDOWN:
             pauseExec = not pauseExec
 
@@ -121,13 +123,26 @@ while not endGame:
         mouseClick = pygame.mouse.get_pressed()
 
         # Obtención de posición del cursor en la pantalla:
+        # Si se hace click con cualquier botón del mouse, se obtiene un valor en mouseClick mayor a cero
         if sum(mouseClick) > 0:
-            posX, posY, = pygame.mouse.get_pos()
-            celX, celY = int(np.floor(posX / dimCW)), int(np.floor(posY / dimCH))
-            newGameState[celX, celY] = not mouseClick[2]
 
-        if mouseClick[1]:
-            pauseExec = not pauseExec
+            print("Click del botón:", mouseClick)
+
+            # Click del medio pausa / reanuda el juego
+            if mouseClick[1]:
+
+                pauseExec = not pauseExec
+
+            else:
+
+                # Obtengo las coordenadas del cursor del mouse en pixeles
+                posX, posY, = pygame.mouse.get_pos()
+
+                # Convierto de coordenadas en pixeles a celda clickeada en la grilla
+                celX, celY = int(np.floor(posX / dimCW)), int(np.floor(posY / dimCH))
+
+                # Click izquierdo y derecho permutan entre vida y muerte
+                newGameState[celX, celY] = not gameState[celX, celY]
 
     # Recorro cada una de las celdas generadas
     for y in range(0, nxC):
