@@ -1,5 +1,5 @@
-#
 # https://github.com/Jonatandb/DotCSV-Juego-de-la-vida
+# -*- coding: utf-8 -*-
 #
 import pygame, os
 import numpy as np
