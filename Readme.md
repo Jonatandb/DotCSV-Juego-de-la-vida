@@ -30,7 +30,7 @@
 
 ---
 
-## Pásginas consultadas:
+## Páginas consultadas:
 
 - Configuro VSCode para que no muestre un alerta erronea sobre pygame
 
