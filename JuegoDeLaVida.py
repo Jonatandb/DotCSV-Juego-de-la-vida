@@ -1,3 +1,6 @@
+#
+# https://github.com/Jonatandb/DotCSV-Juego-de-la-vida
+#
 import pygame, os
 import numpy as np
 import time
@@ -10,11 +13,15 @@ pygame.init()
 # Establezco el título de la ventana:
 pygame.display.set_caption("Juego de la vida - Jonatandb")
 
-# Carga el icono
-icono = pygame.image.load("./icono.ico")
+# Carga el icono si existe
+iconPath = "./icono.ico"
 
-# Establece el icono
-pygame.display.set_icon(icono)
+if os.path.exists(iconPath):
+
+    icono = pygame.image.load(iconPath)
+
+    # Establece el icono de la ventana
+    pygame.display.set_icon(icono)
 
 # Defino ancho y alto de la ventana
 width, height = 700, 700
@@ -125,8 +132,6 @@ while not endGame:
         # Obtención de posición del cursor en la pantalla:
         # Si se hace click con cualquier botón del mouse, se obtiene un valor en mouseClick mayor a cero
         if sum(mouseClick) > 0:
-
-            print("Click del botón:", mouseClick)
 
             # Click del medio pausa / reanuda el juego
             if mouseClick[1]:
