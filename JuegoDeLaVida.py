@@ -17,7 +17,7 @@ bg = 25, 25, 25
 screen.fill(bg)
 
 # Cantidad de celdas en cada eje
-nxC, nyC = 25, 25
+nxC, nyC = 50, 50
 
 # Ancho y alto de cada celda
 dimCW = width / nxC
@@ -29,16 +29,25 @@ dimCH = height / nyC
 gameState = np.zeros((nxC, nyC))
 
 # Autómata palo:
-gameState[5, 3] = 1
-gameState[5, 4] = 1
-gameState[5, 5] = 1
+# 0 1 0
+# 0 1 0
+# 0 1 0
+# gameState[5, 3] = 1
+# gameState[5, 4] = 1
+# gameState[5, 5] = 1
 
 # Autómata móvil:
+# 0 1 0
+# 0 0 1
+# 1 1 1
 gameState[21, 21] = 1
 gameState[22, 22] = 1
 gameState[22, 23] = 1
 gameState[21, 23] = 1
 gameState[20, 23] = 1
+
+# Control de la ejecución:
+pauseExec = False
 
 # Bucle de ejecución principal (Main Loop)
 while True:
@@ -51,31 +60,40 @@ while True:
     # Agrego pequeña pausa para que el cpu no trabaje al 100%
     time.sleep(0.1)
 
+    # Registro de eventos de teclado y mouse
+    ev = pygame.event.get()
+
+    for event in ev:
+        if event.type == pygame.KEYDOWN:
+            pauseExec = not pauseExec
+
     # Recorro cada una de las celdas generadas
     for y in range(0, nxC):
         for x in range(0, nyC):
 
-            # Cálculo del número de vecinos cercanos
-            n_neigh = (
-                gameState[(x - 1) % nxC, (y - 1) % nyC]
-                + gameState[(x) % nxC, (y - 1) % nyC]
-                + gameState[(x + 1) % nxC, (y - 1) % nyC]
-                + gameState[(x - 1) % nxC, (y) % nyC]
-                + gameState[(x + 1) % nxC, (y) % nyC]
-                + gameState[(x - 1) % nxC, (y + 1) % nyC]
-                + gameState[(x) % nxC, (y + 1) % nyC]
-                + gameState[(x + 1) % nxC, (y + 1) % nyC]
-            )
+            if not pauseExec:
 
-            # Regla 1: Una célula muerta con exactamente 3 vecinas vivas: "revive"
-            if gameState[x, y] == 0 and n_neigh == 3:
-                newGameState[x, y] = 1
+                # Cálculo del número de vecinos cercanos
+                n_neigh = (
+                    gameState[(x - 1) % nxC, (y - 1) % nyC]
+                    + gameState[(x) % nxC, (y - 1) % nyC]
+                    + gameState[(x + 1) % nxC, (y - 1) % nyC]
+                    + gameState[(x - 1) % nxC, (y) % nyC]
+                    + gameState[(x + 1) % nxC, (y) % nyC]
+                    + gameState[(x - 1) % nxC, (y + 1) % nyC]
+                    + gameState[(x) % nxC, (y + 1) % nyC]
+                    + gameState[(x + 1) % nxC, (y + 1) % nyC]
+                )
 
-            # Regla 2: Una célula viva con menos de 2 o más de 3 vecinas vivas : "muere"
-            elif gameState[x, y] == 1 and (n_neigh < 2 or n_neigh > 3):
-                newGameState[x, y] = 0
+                # Regla 1: Una célula muerta con exactamente 3 vecinas vivas: "revive"
+                if gameState[x, y] == 0 and n_neigh == 3:
+                    newGameState[x, y] = 1
 
-            # Creación del poligono de cada celda a dibujar
+                # Regla 2: Una célula viva con menos de 2 o más de 3 vecinas vivas : "muere"
+                elif gameState[x, y] == 1 and (n_neigh < 2 or n_neigh > 3):
+                    newGameState[x, y] = 0
+
+            # Creación del polígono de cada celda a dibujar
             poly = [
                 ((x) * dimCW, y * dimCH),
                 ((x + 1) * dimCW, y * dimCH),
