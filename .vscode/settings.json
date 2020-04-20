@@ -1,3 +1,6 @@
 {
-  "python.linting.pylintArgs": ["--extension-pkg-whitelist=pygame"]
+  "python.linting.pylintArgs": [
+    "--extension-pkg-whitelist=pygame"
+  ],
+  "python.formatting.provider": "black"
 }
