@@ -61,7 +61,7 @@ gameState = np.zeros((nxC, nyC))
 # gameState[11, 13] = 1
 # gameState[12, 13] = 1
 
-# Versión de mi aútomata que siempre aparece centrada: Autómata Jonatandb :)
+# Versión de mi autómata que siempre aparece centrada: Autómata Jonatandb :)
 posInitX = int((nxC / 2) - 3)
 posInitY = int((nyC / 2) - 4)
 gameState[posInitX, posInitY] = 1
@@ -96,6 +96,15 @@ while True:
     for event in ev:
         if event.type == pygame.KEYDOWN:
             pauseExec = not pauseExec
+
+        # Detección de click del mouse:
+        mouseClick = pygame.mouse.get_pressed()
+
+        # Obtención de posición del cursor en la pantalla:
+        if sum(mouseClick) > 0:
+            posX, posY, = pygame.mouse.get_pos()
+            celX, celY = int(np.floor(posX / dimCW)), int(np.floor(posY / dimCH))
+            newGameState[celX, celY] = not mouseClick[2]
 
     # Recorro cada una de las celdas generadas
     for y in range(0, nxC):

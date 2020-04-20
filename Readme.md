@@ -13,3 +13,7 @@ Configuro VSCode para que entorno de debugging por defecto sea el que ejecuta el
 <a href="https://www.reddit.com/r/Python/comments/8oqy03/blog_a_comparison_of_autopep8_black_and_yapf_code/" target="_blank">Blog: A comparison of autopep8, black, and yapf - Code formatters for Python</a>
 
 <a href="https://medium.com/3yourmind/auto-formatters-for-python-8925065f9505" target="_blank">Auto formatters for Python 👨‍💻🤖</a>
+
+<a href="https://nerdparadise.com/programming/pygame/part1" target="_blank">PyGame Tutorial: Getting Started</a>
+
+<a href="https://www.w3schools.com/python/python_casting.asp" target="_blank">Python Casting</a>
