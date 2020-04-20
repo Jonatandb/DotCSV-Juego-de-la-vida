@@ -1,6 +1,9 @@
-import pygame
+import pygame, os
 import numpy as np
 import time
+
+# Hago que la ventana aparezca centrada en Windows
+os.environ["SDL_VIDEO_CENTERED"] = "1"
 
 pygame.init()
 
