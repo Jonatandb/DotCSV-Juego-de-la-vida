@@ -145,10 +145,10 @@ while not endGame:
 
             # Creación del polígono de cada celda a dibujar
             poly = [
-                ((x) * dimCW, y * dimCH),
-                ((x + 1) * dimCW, y * dimCH),
-                ((x + 1) * dimCW, (y + 1) * dimCH),
-                ((x) * dimCW, (y + 1) * dimCH),
+                (int(x * dimCW), int(y * dimCH)),
+                (int((x + 1) * dimCW), int(y * dimCH)),
+                (int((x + 1) * dimCW), int((y + 1) * dimCH)),
+                (int(x * dimCW), int((y + 1) * dimCH))
             ]
 
             if newGameState[x, y] == 0:
