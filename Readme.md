@@ -5,8 +5,8 @@
 ---
 
 <p align="center">
-    <a href="https://github.com/Jonatandb/DotCSV-Juego-de-la-vida">
-        <img src="Juego_de_la_vida_Jonatandb.gif" alt="Juego de la vida | Versión Jonatandb"/>
+    <a href="https://repl.it/@Jonatandb/DotCSV-Juego-de-la-vida-Jonatandb" target="_blank">
+            <img src="Juego_de_la_vida_Jonatandb.gif" alt="Juego de la vida | Versión Jonatandb"/>
     </a>
 </p>
 
