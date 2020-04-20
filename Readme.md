@@ -1,8 +1,26 @@
-# Programando el Juego de La Vida... en 10 MINUTOS! - DOTCSV
+# Programando el Juego de La Vida... en 10 MINUTOS! - DotCSV
 
-#
+### Video: <a href="https://www.youtube.com/watch?v=qPtKv9fSHZY" target="_blank">https://www.youtube.com/watch?v=qPtKv9fSHZY</a>
 
-# <a href="https://www.youtube.com/watch?v=qPtKv9fSHZY" target="_blank">https://www.youtube.com/watch?v=qPtKv9fSHZY</a>
+---
+
+# Para jugarlo online hacer click acá:
+
+## <a href="https://repl.it/@Jonatandb/DotCSV-Juego-de-la-vida-Jonatandb" target="_blank">Juego de la vida - Versión: Jonatandb :-)</a>
+
+## Cómo jugar:
+
+- ### Al abrir el sitio con el juego presionar el botón "Run"
+
+- ### Con click izquierdo se da "vida" a celdas de la grilla
+
+- ### Con click derecho se "mata" celdas clickeadas en la grilla
+
+- ### Con click medio del mouse se Inicia/Pausa la ejecución del juego
+
+---
+
+## Pásginas consultadas:
 
 Configuro VSCode para que no muestre un alerta erronea sobre pygame
 
