@@ -126,12 +126,12 @@ while not endGame:
                 # Cálculo del número de vecinos cercanos
                 n_neigh = (
                     gameState[(x - 1) % nxC, (y - 1) % nyC]
-                    + gameState[(x) % nxC, (y - 1) % nyC]
+                    + gameState[x % nxC, (y - 1) % nyC]
                     + gameState[(x + 1) % nxC, (y - 1) % nyC]
-                    + gameState[(x - 1) % nxC, (y) % nyC]
-                    + gameState[(x + 1) % nxC, (y) % nyC]
+                    + gameState[(x - 1) % nxC, y % nyC]
+                    + gameState[(x + 1) % nxC, y % nyC]
                     + gameState[(x - 1) % nxC, (y + 1) % nyC]
-                    + gameState[(x) % nxC, (y + 1) % nyC]
+                    + gameState[x % nxC, (y + 1) % nyC]
                     + gameState[(x + 1) % nxC, (y + 1) % nyC]
                 )
 
@@ -145,10 +145,10 @@ while not endGame:
 
             # Creación del polígono de cada celda a dibujar
             poly = [
-                ((x) * dimCW, y * dimCH),
-                ((x + 1) * dimCW, y * dimCH),
-                ((x + 1) * dimCW, (y + 1) * dimCH),
-                ((x) * dimCW, (y + 1) * dimCH),
+                (int(x * dimCW), int(y * dimCH)),
+                (int((x + 1) * dimCW), int(y * dimCH)),
+                (int((x + 1) * dimCW), int((y + 1) * dimCH)),
+                (int(x * dimCW), int((y + 1) * dimCH))
             ]
 
             if newGameState[x, y] == 0:
