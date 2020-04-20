@@ -77,10 +77,14 @@ gameState[posInitX + 2, posInitY + 3] = 1
 # Control de la ejecución - En True se inicia pausado (Para poder ver la forma inicial de los aútomatas):
 pauseExec = True
 
-pauseOneSec = False  # Defino que quiero que pause un segundo por vuelta
+# Defino que quiero que pause un segundo por vuelta:
+pauseOneSec = False
 
-# Bucle de ejecución principal (Main Loop)
-while True:
+# Controla la finalización del juego:
+endGame = False
+
+# Bucle de ejecución principal (Main Loop):
+while not endGame:
 
     newGameState = np.copy(gameState)
 
@@ -94,6 +98,10 @@ while True:
     ev = pygame.event.get()
 
     for event in ev:
+
+        if event.type == pygame.QUIT:
+            endGame = True
+
         if event.type == pygame.KEYDOWN:
             pauseExec = not pauseExec
 
