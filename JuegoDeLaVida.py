@@ -148,7 +148,7 @@ while not endGame:
                 (int(x * dimCW), int(y * dimCH)),
                 (int((x + 1) * dimCW), int(y * dimCH)),
                 (int((x + 1) * dimCW), int((y + 1) * dimCH)),
-                (int(x * dimCW), int((y + 1) * dimCH))
+                (int(x * dimCW), int((y + 1) * dimCH)),
             ]
 
             if newGameState[x, y] == 0:
@@ -158,7 +158,10 @@ while not endGame:
                 # poly            -> Puntos que definan al poligono que se está dibujando
                 pygame.draw.polygon(screen, (128, 128, 128), poly, 1)
             else:
-                pygame.draw.polygon(screen, (255, 255, 255), poly, 0)
+                if pauseExec:
+                    pygame.draw.polygon(screen, (128, 128, 128), poly, 0)
+                else:
+                    pygame.draw.polygon(screen, (255, 255, 255), poly, 0)
 
     # Actualizo gameState
     gameState = np.copy(newGameState)
