@@ -7,6 +7,9 @@ os.environ["SDL_VIDEO_CENTERED"] = "1"
 
 pygame.init()
 
+# Establezco el titulo de la ventana:
+pygame.display.set_caption("Juego de la vida - Jonatandb")
+
 # Ancho y alto de la pantalla
 width, height = 700, 700
 
