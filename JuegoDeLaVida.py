@@ -5,7 +5,7 @@ import time
 pygame.init()
 
 # Ancho y alto de la pantalla
-width, height = 1000, 1000
+width, height = 700, 700
 
 # Creación de la pantalla
 screen = pygame.display.set_mode((height, width))
@@ -17,7 +17,7 @@ bg = 25, 25, 25
 screen.fill(bg)
 
 # Cantidad de celdas en cada eje
-nxC, nyC = 100, 100
+nxC, nyC = 50, 50
 
 # Ancho y alto de cada celda
 dimCW = width / nxC
@@ -92,7 +92,7 @@ while not endGame:
     screen.fill(bg)
 
     # Agrego pequeña pausa para que el cpu no trabaje al 100%
-    time.sleep(1)
+    time.sleep(0.1)
 
     # Registro de eventos de teclado y mouse
     ev = pygame.event.get()
