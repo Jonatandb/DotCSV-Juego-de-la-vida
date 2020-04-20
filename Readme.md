@@ -10,8 +10,6 @@
     </a>
 </p>
 
-## <a href="https://repl.it/@Jonatandb/DotCSV-Juego-de-la-vida-Jonatandb" target="_blank">Jugalo online haciendo click acá: Juego de la vida by Jonatandb :-)</a>
-
 ## Reglas:
 
 - Regla 1: Una célula muerta con exactamente 3 vecinas vivas: "revive".
@@ -27,6 +25,14 @@
 - ### Click medio del mouse Pausa / Reanuda el juego
 
 - #### El juego pausado se puede utilizar para crear autómatas :-)
+
+---
+
+## <a href="https://repl.it/@Jonatandb/DotCSV-Juego-de-la-vida-Jonatandb" target="_blank">Jugalo online haciendo click acá: Juego de la vida by Jonatandb :-)</a>
+
+<p align="center">
+<iframe height="400px" width="100%" src="https://repl.it/@Jonatandb/DotCSV-Juego-de-la-vida-Jonatandb?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+</p>
 
 ---
 
