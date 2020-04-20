@@ -12,19 +12,21 @@
 
 ## <a href="https://repl.it/@Jonatandb/DotCSV-Juego-de-la-vida-Jonatandb" target="_blank">Jugalo online haciendo click acá: Juego de la vida by Jonatandb :-)</a>
 
+## Reglas:
+
+- Regla 1: Una célula muerta con exactamente 3 vecinas vivas: "revive".
+
+- Regla 2: Una célula viva que tiene menos de 2 vecinas o tiene más de 3 vecinas vivas: "muere"
+
 ## Cómo jugar:
 
 - ### Al abrir el sitio con el juego presionar el botón "Run"
 
-- ### Con click izquierdo se da "vida" a celdas de la grilla
+- ### Click izquierdo se da "vida" a una celda de la grilla
 
-- ### Con click derecho se "mata" celdas "vivas" en la grilla
+- ### Click derecho "mata" una celda "viva" de la grilla
 
-- ### Con click medio del mouse se Inicia/Pausa la ejecución del juego
-
-- ### Reglas:
-  - Regla 1: Una célula muerta con exactamente 3 vecinas vivas: "revive".
-  - Regla 2: Una célula viva que tiene menos de 2 vecinas o tiene más de 3 vecinas vivas: "muere"
+- ### Click medio del mouse se Reanuda / Pausa la ejecución del juego
 
 ---
 
