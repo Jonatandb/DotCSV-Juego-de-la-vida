@@ -20,13 +20,13 @@
 
 ## Cómo jugar:
 
-- ### Al abrir el sitio con el juego presionar el botón "Run"
+- ### Al abrir el sitio con el juego presionar el botón "Run" para que comience
 
-- ### Click izquierdo se da "vida" a una celda de la grilla
+- ### Click a una celda le da "vida" y si estaba "viva" entonces se la "mata"
 
-- ### Click derecho "mata" una celda "viva" de la grilla
+- ### Click medio del mouse Pausa / Reanuda el juego
 
-- ### Click medio del mouse se Reanuda / Pausa la ejecución del juego
+- #### El juego pausado se puede utilizar para crear autómatas :-)
 
 ---
 
