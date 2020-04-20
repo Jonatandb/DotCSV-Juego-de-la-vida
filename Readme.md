@@ -16,7 +16,7 @@
 
 - Regla 1: Una célula muerta con exactamente 3 vecinas vivas: "revive".
 
-- Regla 2: Una célula viva que tiene menos de 2 vecinas o tiene más de 3 vecinas vivas: "muere"
+- Regla 2: Una célula viva que tiene menos de 2 vecinas vivas o tiene más de 3 vecinas vivas: "muere"
 
 ## Cómo jugar:
 
