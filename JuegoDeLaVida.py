@@ -1,9 +1,9 @@
 # https://github.com/Jonatandb/DotCSV-Juego-de-la-vida
 # -*- coding: utf-8 -*-
 #
-import pygame, os
+import pygame
+import time, os
 import numpy as np
-import time
 
 # Hago que la ventana aparezca centrada en Windows
 os.environ["SDL_VIDEO_CENTERED"] = "1"
@@ -65,33 +65,24 @@ gameState = np.zeros((nxC, nyC))
 # gameState[21, 23] = 1
 # gameState[20, 23] = 1
 
-# Autómata Jonatandb :)
-# 1 1 1
-# 0 0 1
-# 1 0 1
-# 1 1 1
-# gameState[10, 10] = 1
-# gameState[11, 10] = 1
-# gameState[12, 10] = 1
-# gameState[12, 11] = 1
-# gameState[10, 12] = 1
-# gameState[12, 12] = 1
-# gameState[10, 13] = 1
-# gameState[11, 13] = 1
-# gameState[12, 13] = 1
-
 # Versión de mi autómata que siempre aparece centrada: Autómata Jonatandb :)
 posInitX = int((nxC / 2) - 3)
-posInitY = int((nyC / 2) - 4)
+posInitY = int((nyC / 2) - 5)
 gameState[posInitX, posInitY] = 1
 gameState[posInitX + 1, posInitY] = 1
 gameState[posInitX + 2, posInitY] = 1
-gameState[posInitX + 2, posInitY + 1] = 1
-gameState[posInitX, posInitY + 2] = 1
-gameState[posInitX + 2, posInitY + 2] = 1
+gameState[posInitX + 3, posInitY] = 1
+
+gameState[posInitX + 3, posInitY + 1] = 1
+gameState[posInitX + 3, posInitY + 2] = 1
+
 gameState[posInitX, posInitY + 3] = 1
-gameState[posInitX + 1, posInitY + 3] = 1
-gameState[posInitX + 2, posInitY + 3] = 1
+gameState[posInitX + 3, posInitY + 3] = 1
+
+gameState[posInitX, posInitY + 4] = 1
+gameState[posInitX + 1, posInitY + 4] = 1
+gameState[posInitX + 2, posInitY + 4] = 1
+gameState[posInitX + 3, posInitY + 4] = 1
 
 # Control de la ejecución - En True se inicia pausado (Para poder ver la forma inicial de los aútomatas):
 pauseExec = True
