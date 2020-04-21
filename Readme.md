@@ -44,15 +44,15 @@
 
 ### PyGame
 
-<a href="https://nerdparadise.com/programming/pygame/part1" target="_blank">PyGame Tutorial: Getting Started</a>
+- <a href="https://nerdparadise.com/programming/pygame/part1" target="_blank">PyGame Tutorial: Getting Started</a>
 
-<a href="https://www.w3schools.com/python/python_casting.asp" target="_blank">Python Casting</a>
+- <a href="https://www.w3schools.com/python/python_casting.asp" target="_blank">Python Casting</a>
 
-<a href="https://www.pygame.org/docs/" target="_blank">Pygame Front Page - Documents</a>
+- <a href="https://www.pygame.org/docs/" target="_blank">Pygame Front Page - Documents</a>
 
-<a href="https://www.pygame.org/docs/ref/display.html#pygame.display.set_mode" target="_blank">Pygame: pygame.display.set_mode</a>
+- <a href="https://www.pygame.org/docs/ref/display.html#pygame.display.set_mode" target="_blank">Pygame: pygame.display.set_mode</a>
 
-<a href="https://repl.it/talk/learn/A-Starter-Guide-to-Pygame/11741" target="_blank">🚀 A Starter Guide to Pygame 📀</a>
+- <a href="https://repl.it/talk/learn/A-Starter-Guide-to-Pygame/11741" target="_blank">🚀 A Starter Guide to Pygame 📀</a>
 
 ### Incrustar el Repl en el readme para que se pueda jugar directo desde Github:
 
