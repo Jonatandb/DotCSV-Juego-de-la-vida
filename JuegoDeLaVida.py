@@ -87,11 +87,11 @@ gameState[posInitX + 3, posInitY + 4] = 1
 # Control de la ejecución - En True se inicia pausado (Para poder ver la forma inicial de los aútomatas):
 pauseExec = True
 
-# Controla si se debe pausar un segundo por iteración:
-pauseOneSec = False
-
 # Controla la finalización del juego:
 endGame = False
+
+# Acumulador de cantidad de iteraciones:
+iteration = 0
 
 # Bucle de ejecución principal (Main Loop):
 while not endGame:
@@ -106,6 +106,9 @@ while not endGame:
 
     # Registro de eventos de teclado y mouse
     ev = pygame.event.get()
+
+    # Contador de población:
+    population = 0
 
     for event in ev:
 
@@ -140,6 +143,10 @@ while not endGame:
                 # Click izquierdo y derecho permutan entre vida y muerte
                 newGameState[celX, celY] = not gameState[celX, celY]
 
+    if not pauseExec:
+        # Incremento el contador de generaciones
+        iteration += 1
+
     # Recorro cada una de las celdas generadas
     for y in range(0, nxC):
         for x in range(0, nyC):
@@ -158,13 +165,19 @@ while not endGame:
                     + gameState[(x + 1) % nxC, (y + 1) % nyC]
                 )
 
-                # Regla 1: Una célula muerta con exactamente 3 vecinas vivas: "revive"
+                # Una célula muerta con exactamente tres células vecinas -> vuelve a la vida.
                 if gameState[x, y] == 0 and n_neigh == 3:
                     newGameState[x, y] = 1
 
-                # Regla 2: Una célula viva con menos de 2 o más de 3 vecinas vivas : "muere"
+                # Una célula viva con dos o tres células vecinas  -> se va a mantener viva.
+                # Una célula viva con cero o una célula vecina    -> muere de soledad.
+                # Una célula viva con más de tres células vecinas -> muere por sobrepoblación.
                 elif gameState[x, y] == 1 and (n_neigh < 2 or n_neigh > 3):
                     newGameState[x, y] = 0
+
+            # Incremento el contador de población:
+            if gameState[x, y] == 1:
+                population += 1
 
             # Creación del polígono de cada celda a dibujar
             poly = [
@@ -182,16 +195,20 @@ while not endGame:
                 pygame.draw.polygon(screen, (128, 128, 128), poly, 1)
             else:
                 if pauseExec:
+                    # Con el juego pausado pinto de gris las celdas
                     pygame.draw.polygon(screen, (128, 128, 128), poly, 0)
                 else:
+                    # Con el juego ejecutándose pinto de blanco las celdas
                     pygame.draw.polygon(screen, (255, 255, 255), poly, 0)
+
+    # Actualizo el título de la ventana
+    title = f"Juego de la vida - Jonatandb - Población: {population} - Generación: {iteration}"
+    if pauseExec:
+        title += " - [PAUSADO]"
+    pygame.display.set_caption(title)
 
     # Actualizo gameState
     gameState = np.copy(newGameState)
 
     # Muestro y actualizo los fotogramas en cada iteración del bucle principal
     pygame.display.flip()
-
-    if pauseOneSec:
-
-        time.sleep(1)

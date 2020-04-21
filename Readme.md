@@ -10,11 +10,15 @@
     </a>
 </p>
 
-## Reglas:
+## Los criterios para la vida o la muerte de una célula son:
 
-- Regla 1: Una célula muerta con exactamente 3 vecinas vivas: "revive".
+- Una célula viva con cero o una célula vecina viva -> muere de soledad.
 
-- Regla 2: Una célula viva que tiene menos de 2 vecinas vivas o tiene más de 3 vecinas vivas: "muere"
+- Una célula viva con más de tres células vecinas vivas -> muere por sobrepoblación.
+
+- Una célula viva con dos o tres células vecinas -> se va a mantener viva.
+
+- Una célula muerta con exactamente tres células vecinas -> vuelve a la vida.
 
 ## Cómo jugar:
 
@@ -53,6 +57,8 @@
 - <a href="https://www.pygame.org/docs/ref/display.html#pygame.display.set_mode" target="_blank">Pygame: pygame.display.set_mode</a>
 
 - <a href="https://repl.it/talk/learn/A-Starter-Guide-to-Pygame/11741" target="_blank">🚀 A Starter Guide to Pygame 📀</a>
+
+- <a href="https://www.pygame.org/docs/ref/display.html#pygame.display.set_caption" target="_blank">Pygame display.set_caption</a>
 
 ### Incrustar el Repl en el readme para que se pueda jugar directo desde Github:
 
@@ -93,3 +99,13 @@
 - <a href="https://blog.repl.it/github" target="_blank">Repl from Repo</a>
 
 - <a href="https://repl.it/talk/learn/Configuring-GitHub-repos-to-run-on-Replit-and-contributing-back/23948" target="_blank">Configuring GitHub repos to run on Repl.it and contributing back</a>
+
+### Python:
+
+- <a href="https://www.programiz.com/python-programming/string-interpolation" target="_blank">Python String Interpolation</a>
+
+- <a href="https://stackoverflow.com/questions/2632677/python-integer-incrementing-with" target="_blank">Python integer incrementing with ++</a>
+
+### Búsquedas varias:
+
+- <a href="https://www.microsoft.com/en-us/microsoft-365/blog/2007/11/02/iteration-conways-game-of-life/" target="_blank">Iteration & Conway’s Game of Life</a>
