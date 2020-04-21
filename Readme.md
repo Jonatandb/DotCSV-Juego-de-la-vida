@@ -26,13 +26,7 @@
 
 - #### El juego pausado se puede utilizar para crear autómatas :-)
 
----
-
-## <a href="https://repl.it/@Jonatandb/DotCSV-Juego-de-la-vida-Jonatandb" target="_blank">Jugalo online haciendo click acá: Juego de la vida by Jonatandb :-)</a>
-
-<p align="center">
-  <iframe height="400px" width="100%" src="https://repl.it/@Jonatandb/DotCSV-Juego-de-la-vida-Jonatandb?lite=1&outputonly=1" frameborder="0"></iframe>
-</p>
+### Jugalo online haciendo click acá:<a href="https://repl.it/@Jonatandb/DotCSV-Juego-de-la-vida-Jonatandb" target="_blank"> Juego de la vida by Jonatandb :-)</a>
 
 ---
 
@@ -87,3 +81,5 @@
 - <a href="https://repl.it/talk/learn/A-Starter-Guide-to-Pygame/11741" target="_blank">🚀 A Starter Guide to Pygame 📀</a>
 
 - <a href="https://blog.repl.it/github" target="_blank">Repl from Repo</a>
+
+- <a href="https://stackoverflow.com/questions/48402823/embed-openstreetmap-iframe-in-github-markdown" target="_blank">Embed openstreetmap iframe in github markdown</a>
