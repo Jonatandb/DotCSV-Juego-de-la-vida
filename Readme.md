@@ -5,7 +5,7 @@
 ---
 
 <p align="center">
-    <a href="https://repl.it/@Jonatandb/DotCSV-Juego-de-la-vida-Jonatandb" target="_blank">
+    <a href="https://repl.it/@Jonatandb/DotCSV-Juego-de-la-vida" target="_blank">
             <img src="Juego_de_la_vida_Jonatandb.gif" alt="Juego de la vida | Versión Jonatandb"/>
     </a>
 </p>
@@ -26,7 +26,7 @@
 
 - #### El juego pausado se puede utilizar para crear autómatas :-)
 
-### Jugalo online haciendo click acá:<a href="https://repl.it/@Jonatandb/DotCSV-Juego-de-la-vida-Jonatandb" target="_blank"> Juego de la vida by Jonatandb :-)</a>
+### Jugalo online haciendo click acá:<a href="https://repl.it/@Jonatandb/DotCSV-Juego-de-la-vida" target="_blank"> Juego de la vida by Jonatandb :-)</a>
 
 ---
 
