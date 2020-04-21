@@ -31,7 +31,7 @@
 ## <a href="https://repl.it/@Jonatandb/DotCSV-Juego-de-la-vida-Jonatandb" target="_blank">Jugalo online haciendo click acá: Juego de la vida by Jonatandb :-)</a>
 
 <p align="center">
-<iframe height="400px" width="100%" src="https://repl.it/@Jonatandb/DotCSV-Juego-de-la-vida-Jonatandb?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+  <iframe height="400px" width="100%" src="https://repl.it/@Jonatandb/DotCSV-Juego-de-la-vida-Jonatandb?lite=1&outputonly=1" frameborder="0"></iframe>
 </p>
 
 ---
@@ -48,16 +48,42 @@
 
   - <a href="https://medium.com/3yourmind/auto-formatters-for-python-8925065f9505" target="_blank">Auto formatters for Python 👨‍💻🤖</a>
 
-* <a href="https://nerdparadise.com/programming/pygame/part1" target="_blank">PyGame Tutorial: Getting Started</a>
+- <a href="https://nerdparadise.com/programming/pygame/part1" target="_blank">PyGame Tutorial: Getting Started</a>
 
-* <a href="https://www.w3schools.com/python/python_casting.asp" target="_blank">Python Casting</a>
+- <a href="https://www.w3schools.com/python/python_casting.asp" target="_blank">Python Casting</a>
 
-* <a href="https://www.pygame.org/docs/" target="_blank">Pygame Front Page - Documents</a>
+- <a href="https://www.pygame.org/docs/" target="_blank">Pygame Front Page - Documents</a>
 
-* <a href="https://www.pygame.org/docs/ref/display.html#pygame.display.set_mode" target="_blank">Pygame: pygame.display.set_mode</a>
+- <a href="https://www.pygame.org/docs/ref/display.html#pygame.display.set_mode" target="_blank">Pygame: pygame.display.set_mode</a>
 
-* <a href="https://gamedev.stackexchange.com/questions/82448/any-way-to-embed-pygame-in-webpages" target="_blank">Any way to embed Pygame in webpages?</a>
+- <a href="https://gamedev.stackexchange.com/questions/82448/any-way-to-embed-pygame-in-webpages" target="_blank">Any way to embed Pygame in webpages?</a>
 
-* <a href="https://www.reddit.com/r/Python/comments/5o0bq1/pygame_web_apps/" target="_blank">Pygame web apps?</a>
+- <a href="https://www.reddit.com/r/Python/comments/5o0bq1/pygame_web_apps/" target="_blank">Pygame web apps?</a>
 
-* <a href="https://stackoverflow.com/questions/8452927/is-it-possible-to-run-pygame-or-pyglet-in-a-browser/55352300#55352300" target="_blank">is it possible to run pygame or pyglet in a browser?</a>
+- <a href="https://stackoverflow.com/questions/8452927/is-it-possible-to-run-pygame-or-pyglet-in-a-browser/55352300#55352300" target="_blank">is it possible to run pygame or pyglet in a browser?</a>
+
+- <a href="https://www.guru99.com/accessing-internet-data-with-python.html#2" target="_blank">How to get HTML file form URL in Python</a>
+
+- <a href="https://pip.pypa.io/en/latest/user_guide/#requirements-files" target="_blank">PIP - Requirements Files</a>
+
+- <a href="https://stackoverflow.com/questions/3496592/conditional-import-of-modules-in-python" target="_blank">Conditional import of modules in Python</a>
+
+- <a href="https://www.pygame.org/docs/ref/image.html#comment_pygame_image_load" target="_blank">Pygame.org - pygame.image.load()</a>
+
+- <a href="https://pypi.org/project/drawSvg/" target="_blank">drawSvg - A Python 3 library for programmatically generating SVG images </a>
+
+- <a href="https://www.python.org/community/logos/" target="_blank">The Python Logo
+  </a>
+
+- <a href="https://www.w3schools.com/python/python_functions.asp" target="_blank">Python Functions
+  </a>
+
+- <a href="https://stackoverflow.com/questions/120584/svg-rendering-in-a-pygame-application" target="_blank">SVG rendering in a PyGame application</a>
+
+- <a href="https://www.guru99.com/python-check-if-file-exists.html" target="_blank">Python Check If File or Directory Exists</a>
+
+- <a href="https://docs.repl.it/repls/dot-replit" target="_blank">Configuring the run button</a>
+
+- <a href="https://repl.it/talk/learn/A-Starter-Guide-to-Pygame/11741" target="_blank">🚀 A Starter Guide to Pygame 📀</a>
+
+- <a href="https://blog.repl.it/github" target="_blank">Repl from Repo</a>
