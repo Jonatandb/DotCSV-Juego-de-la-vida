@@ -115,10 +115,26 @@ while not endGame:
         # Si cierran la ventana finalizo el juego
         if event.type == pygame.QUIT:
             endGame = True
+            break
 
-        # Si tocan una tecla pauso / reanudo el juego
         if event.type == pygame.KEYDOWN:
-            pauseExec = not pauseExec
+
+            print(f"event.key: {event}")
+
+            # Si tocan escape finalizo el juego
+            if event.key == pygame.K_ESCAPE:
+                endGame = True
+                break
+
+            # Si tocan la tecla r limpio la grilla, reseteo población e iteración y pongo pausa
+            if event.key == pygame.K_r:
+                iteration = 0
+                gameState = np.zeros((nxC, nyC))
+                newGameState = np.zeros((nxC, nyC))
+                pauseExec = True
+            else:
+                # Si tocan cualquier tecla no contemplada, pauso o reanudo el juego
+                pauseExec = not pauseExec
 
         # Detección de click del mouse:
         mouseClick = pygame.mouse.get_pressed()

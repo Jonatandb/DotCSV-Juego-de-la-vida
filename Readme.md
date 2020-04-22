@@ -50,6 +50,8 @@
 - <a href="https://es.wikipedia.org/wiki/Oscilador_(aut%C3%B3mata_celular)" target="_blank">Oscilador (autómata celular)
   </a>
 
+- <a href="https://www.microsiervos.com/archivo/juegos-y-diversion/conway-juego-de-la-vida.html" target="_blank">John H. Conway hablando del Juego de la vida</a>
+
 ### PyGame
 
 - <a href="https://nerdparadise.com/programming/pygame/part1" target="_blank">PyGame Tutorial: Getting Started</a>
@@ -63,6 +65,8 @@
 - <a href="https://repl.it/talk/learn/A-Starter-Guide-to-Pygame/11741" target="_blank">🚀 A Starter Guide to Pygame 📀</a>
 
 - <a href="https://www.pygame.org/docs/ref/display.html#pygame.display.set_caption" target="_blank">Pygame display.set_caption</a>
+
+- <a href="https://www.pygame.org/docs/ref/key.html" target="_blank">pygame.key</a>
 
 ### Incrustar el Repl en el readme para que se pueda jugar directo desde Github:
 
