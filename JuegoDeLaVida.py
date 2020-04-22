@@ -119,8 +119,6 @@ while not endGame:
 
         if event.type == pygame.KEYDOWN:
 
-            print(f"event.key: {event}")
-
             # Si tocan escape finalizo el juego
             if event.key == pygame.K_ESCAPE:
                 endGame = True
@@ -228,3 +226,5 @@ while not endGame:
 
     # Muestro y actualizo los fotogramas en cada iteración del bucle principal
     pygame.display.flip()
+
+print("Juego finalizado - jonatandb@gmail.com")
