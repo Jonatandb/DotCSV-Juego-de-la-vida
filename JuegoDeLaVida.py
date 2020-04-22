@@ -36,7 +36,7 @@ bg = 25, 25, 25
 screen.fill(bg)
 
 # Cantidad de celdas en cada eje
-nxC, nyC = 50, 50
+nxC, nyC = 60, 60
 
 # Ancho y alto de cada celda
 dimCW = width / nxC
@@ -165,13 +165,13 @@ while not endGame:
                     + gameState[(x + 1) % nxC, (y + 1) % nyC]
                 )
 
-                # Una célula muerta con exactamente tres células vecinas -> vuelve a la vida.
+                # Una célula muerta con exactamente 3 células vecinas vivas "nace"
+                # (es decir, al turno siguiente estará viva).
                 if gameState[x, y] == 0 and n_neigh == 3:
                     newGameState[x, y] = 1
 
-                # Una célula viva con dos o tres células vecinas  -> se va a mantener viva.
-                # Una célula viva con cero o una célula vecina    -> muere de soledad.
-                # Una célula viva con más de tres células vecinas -> muere por sobrepoblación.
+                # Una célula viva con 2 o 3 células vecinas vivas sigue viva,
+                # en otro caso muere (por "soledad" o "superpoblación")
                 elif gameState[x, y] == 1 and (n_neigh < 2 or n_neigh > 3):
                     newGameState[x, y] = 0
 

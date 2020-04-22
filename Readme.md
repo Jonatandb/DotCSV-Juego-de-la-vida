@@ -12,13 +12,9 @@
 
 ## Los criterios para la vida o la muerte de una célula son:
 
-- Una célula viva con cero o una célula vecina viva -> muere de soledad.
+- Una célula muerta con exactamente 3 células vecinas vivas "nace" (es decir, al turno siguiente estará viva).
 
-- Una célula viva con más de tres células vecinas vivas -> muere por sobrepoblación.
-
-- Una célula viva con dos o tres células vecinas -> se va a mantener viva.
-
-- Una célula muerta con exactamente tres células vecinas -> vuelve a la vida.
+- Una célula viva con 2 o 3 células vecinas vivas sigue viva, en otro caso muere (por "soledad" o "superpoblación").
 
 ## Cómo jugar:
 
@@ -45,6 +41,14 @@
 - <a href="https://www.reddit.com/r/Python/comments/8oqy03/blog_a_comparison_of_autopep8_black_and_yapf_code/" target="_blank">Blog: A comparison of autopep8, black, and yapf - Code formatters for Python</a>
 
 - <a href="https://medium.com/3yourmind/auto-formatters-for-python-8925065f9505" target="_blank">Auto formatters for Python 👨‍💻🤖</a>
+
+### Game of life:
+
+- <a href="https://es.wikipedia.org/wiki/Juego_de_la_vida" target="_blank">Wikipedia: Juego de la vida
+  </a>
+
+- <a href="https://es.wikipedia.org/wiki/Oscilador_(aut%C3%B3mata_celular)" target="_blank">Oscilador (autómata celular)
+  </a>
 
 ### PyGame
 
