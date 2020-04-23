@@ -117,3 +117,11 @@
 ### Búsquedas varias:
 
 - <a href="https://www.microsoft.com/en-us/microsoft-365/blog/2007/11/02/iteration-conways-game-of-life/" target="_blank">Iteration & Conway’s Game of Life</a>
+
+---
+
+<p align="center">
+    <a href="https://ko-fi.com/L3L31N4GV" target="_blank">
+            <img src="https://www.ko-fi.com/img/githubbutton_sm.svg" alt="Support me on Ko-fi"/>
+    </a>
+</p>
