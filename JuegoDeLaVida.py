@@ -220,7 +220,8 @@ while not endGame:
     if pauseExec:
         title += " - [PAUSADO]"
     pygame.display.set_caption(title)
-
+    print(title)
+    
     # Actualizo gameState
     gameState = np.copy(newGameState)
 
