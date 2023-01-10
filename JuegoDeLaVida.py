@@ -93,6 +93,8 @@ endGame = False
 # Acumulador de cantidad de iteraciones:
 iteration = 0
 
+clock = pygame.time.Clock()
+
 # Bucle de ejecución principal (Main Loop):
 while not endGame:
 
@@ -226,5 +228,9 @@ while not endGame:
 
     # Muestro y actualizo los fotogramas en cada iteración del bucle principal
     pygame.display.flip()
+
+    # Fuerzo a que se renderice como mucho 60 frames por segundo, para no consumir CPU demás
+    # https://www.pygame.org/docs/ref/time.html#pygame.time.Clock.tick
+    clock.tick(60)
 
 print("Juego finalizado - jonatandb@gmail.com")
