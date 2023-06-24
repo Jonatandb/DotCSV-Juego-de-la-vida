@@ -5,10 +5,17 @@
 ---
 
 <p align="center">
-    <a href="https://repl.it/@Jonatandb/DotCSV-Juego-de-la-vida" target="_blank">
+    <a href="https://replit.com/@Jonatandb/DotCSV-Juego-de-la-vida?v=1" target="_blank">
             <img src="Juego_de_la_vida_Jonatandb.gif" alt="Juego de la vida | Versión Jonatandb"/>
     </a>
 </p>
+
+---
+>
+## Demo online: [Click acá](https://replit.com/@Jonatandb/DotCSV-Juego-de-la-vida?v=1)
+
+>
+---
 
 ## Los criterios para la vida o la muerte de una célula son:
 
