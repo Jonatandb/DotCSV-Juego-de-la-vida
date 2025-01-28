@@ -1,12 +1,11 @@
 # "Programando el Juego de La Vida... en 10 MINUTOS!"
-- Video de referencia de DotCSV: <a href="https://www.youtube.com/watch?v=qPtKv9fSHZY" target="_blank">https://www.youtube.com/watch?v=qPtKv9fSHZY</a>
+Inspirada en la versión del autor del canal de Youtube -> DotCSV (Video de referencia [acá](https://www.youtube.com/watch?v=qPtKv9fSHZY))
 
 ---
 >
-# Mi versión online 👉🏻[click acá](https://replit.com/@Jonatandb/DotCSV-Juego-de-la-vida?v=1)
-
+# Mi versión online 👉🏻[click acá](https://replit.com/@Jonatandb/DotCSV-Juego-de-la-vida?v=1) 
+- Require una cuenta gratuita de [Replit](https://replit.com/) para poder ejecutarlo online.
 >
----
 ## Adelanto:
 <p align="center">
     <a href="https://replit.com/@Jonatandb/DotCSV-Juego-de-la-vida?v=1" target="_blank">
