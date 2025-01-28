@@ -1,18 +1,25 @@
 # "Programando el Juego de La Vida... en 10 MINUTOS!"
-Inspirada en la versión del autor del canal de Youtube -> DotCSV (Video de referencia [acá](https://www.youtube.com/watch?v=qPtKv9fSHZY))
+- Inspirada en la versión del autor del canal de Youtube -> DotCSV (Video de referencia [acá](https://www.youtube.com/watch?v=qPtKv9fSHZY))
 
 ---
->
-# Mi versión online 👉🏻[click acá](https://replit.com/@Jonatandb/DotCSV-Juego-de-la-vida?v=1) 
-- Require una cuenta gratuita de [Replit](https://replit.com/) para poder ejecutarlo online.
->
-## Adelanto:
+
 <p align="center">
     <a href="https://replit.com/@Jonatandb/DotCSV-Juego-de-la-vida?v=1" target="_blank">
             <img src="Juego_de_la_vida_Jonatandb.gif" alt="Juego de la vida | Versión Jonatandb"/>
     </a>
 </p>
 
+>
+## 🚀 Mi versión online
+- https://replit.com/@Jonatandb/DotCSV-Juego-de-la-vida
+    - Require una cuenta gratuita de [Replit](https://replit.com/) para poder ejecutarlo online.
+
+--- 
+
+## 👨🏻‍💻 Tecnologías usadas
+- Python
+- PyGame
+  
 ---
 
 
