@@ -1,9 +1,13 @@
-# Programando el Juego de La Vida... en 10 MINUTOS! - DotCSV
-
-### Video: <a href="https://www.youtube.com/watch?v=qPtKv9fSHZY" target="_blank">https://www.youtube.com/watch?v=qPtKv9fSHZY</a>
+# "Programando el Juego de La Vida... en 10 MINUTOS!"
+- Video de referencia de DotCSV: <a href="https://www.youtube.com/watch?v=qPtKv9fSHZY" target="_blank">https://www.youtube.com/watch?v=qPtKv9fSHZY</a>
 
 ---
+>
+# Mi versión online 👉🏻[click acá](https://replit.com/@Jonatandb/DotCSV-Juego-de-la-vida?v=1)
 
+>
+---
+## Adelanto:
 <p align="center">
     <a href="https://replit.com/@Jonatandb/DotCSV-Juego-de-la-vida?v=1" target="_blank">
             <img src="Juego_de_la_vida_Jonatandb.gif" alt="Juego de la vida | Versión Jonatandb"/>
@@ -11,11 +15,7 @@
 </p>
 
 ---
->
-## Demo online: [Click acá](https://replit.com/@Jonatandb/DotCSV-Juego-de-la-vida?v=1)
 
->
----
 
 ## Los criterios para la vida o la muerte de una célula son:
 
